@@ -1,0 +1,13 @@
+Package: treewatch
+Type: Package
+Title: Ease Integration Between Treeplyr and Treeio
+Version: 0.1.0
+Author: Caleb Charpentier
+Maintainer: The package maintainer <calebc22@vt.edu>
+Description: This package provides a function to actively bind a treeplyr treedata 
+    object to a treeio treedata object, allowing for easier integration between
+    treeplyr and other tidy-like phylogenetics packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
