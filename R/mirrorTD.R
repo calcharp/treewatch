@@ -38,7 +38,7 @@
 #'
 #'@export
 
-mirrorTD <- function(varname, td){
+mirrorTD <- function(varname, td, env=parent.env(environment())){
   
   #checking that class is correct
   if(!is(td, "treedata")){
@@ -69,7 +69,7 @@ mirrorTD <- function(varname, td){
   binding <- parse(text = command)
   
   #Get proper environment to create Active Binding in
-  envirst <- parent.env(environment())
+  envirst <- env
   #Get variable name for Active Binding
   varname <- as.character(ensym(varname))
   
